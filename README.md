@@ -18,4 +18,4 @@ Extra scope (only if basic is implemented)
  - Requirements to commits, repo and PR are not met 
 
 mark calculation:
-50 - 5 - 30 = 45
+50 - 5 = 45
