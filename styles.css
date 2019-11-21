@@ -99,7 +99,7 @@ body {
           align-items: center;
 }
 
-.tools-instr--item img {
+.tools-instr--item i {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
