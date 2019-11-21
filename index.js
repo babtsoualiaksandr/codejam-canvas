@@ -1,10 +1,12 @@
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext('2d');
-function drawPix(url, pixel,canvasSize) {
+const canvasSize = document.querySelector("#canvas").offsetWidth;
+
+function drawPix(url, pixel) {
     if (pixel === 0) {
         const img = new Image();
         img.onload = function () {
-            ctx.drawImage(img, canvasSize.x1, canvasSize.y1, canvasSize.x2, canvasSize.y2);
+            ctx.drawImage(img,0,0,canvasSize,canvasSize);
         };
         img.src = url;
     } else {
@@ -27,16 +29,15 @@ function drawPix(url, pixel,canvasSize) {
 }
 function clickBtn(event) {
     const btnClick = event.target.classList[1];
-    const canvasSize = {x1:0, x2:0, y1:512, y2:512 };
     switch (btnClick) {
         case 'btn4x4':
-            drawPix('./assets/data/4x4.json', 4, canvasSize);
+            drawPix('./assets/data/4x4.json', 4);
             break;
         case 'btn32x32':
-            drawPix('./assets/data/32x32.json', 32, canvasSize );
+            drawPix('./assets/data/32x32.json', 32 );
             break;
         case 'btnLogo':
-            drawPix('./assets/data/RSS_logo.png', 0, canvasSize);
+            drawPix('./assets/data/RSS_logo.png', 0);
             break;
         default:
             break;
