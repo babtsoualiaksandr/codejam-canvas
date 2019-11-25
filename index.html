@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/data/RSS_logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/a208272566.js" crossorigin="anonymous"></script>
+
+    <title>CodeJam-Canvas</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="header">
+            <i class="fas fa-bars"></i>
+            <h1>CodeJam - Canvas</h1>
+            <i class="fas fa-ellipsis-v"></i>
+        </section>
+        <section class="main">
+            <div class="tools">
+                <div class="tools-instr">
+                    <div class="tools-instr--item">
+                        <i class="fas fa-fill"></i>
+                        <p>Paint bucket</p>
+                    </div>
+                    <div class="tools-instr--item">
+                        <i class="fas fa-pen"></i>
+                        <p>Choose color</p>
+                    </div>
+                    <div id="divider"> </div>
+                    <div class="tools-instr--item">
+                        <i class="fas fa-arrows-alt"></i>
+                        <p>Move</p>
+                    </div>
+                    <div class="tools-instr--item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>Transform</p>
+                    </div>
+                </div>
+                <div class="tools-color">
+                    <div class="tools-color--item">
+                        <div id="circle-current"></div>
+                        <p>Current color</p>
+                    </div>
+                    <div class="tools-color--item">
+                        <div id="circle-prev"></div>
+                        <p>Prev color</p>
+                    </div>
+                    <div id="divider"> </div>
+                    <div class="tools-color--item">
+                        <div id="circle-red"></div>
+                        <p>Red</p>
+                    </div>
+                    <div class="tools-color--item">
+                        <div id="circle-blue"></div>
+                        <p>Blue</p>
+                    </div>
+                </div>
+            </div>
+            <canvas id="canvas" width="512" height="512"></canvas>
+            <div class="btns">
+                <button class="btn btn4x4">4x4</button> <br>
+                <button class="btn btn32x32">32x32</button><br>
+                <button class="btn btnLogo">Logo</button><br>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
