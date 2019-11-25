@@ -14,6 +14,7 @@ function drawPix(url, pixel) {
             .then(res => res.json())
             .then((data) => {
                 if (pixel > 0) {
+                    ctx.clearRect(0, 0, canvasSize, canvasSize);
                     const width = document.querySelector("#canvas").offsetWidth / pixel;
                     const height = document.querySelector("#canvas").offsetHeight / pixel;
                     data.forEach((line, i) => {
